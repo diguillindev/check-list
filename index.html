@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist - Publicación de Libros Electrónicos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      vertical-align: top;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    .task-table input[type="checkbox"] {
+      transform: scale(1.2);
+      margin-right: 10px;
+    }
+    .platform-header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .info {
+      background-color: #ecf0f1;
+      padding: 10px;
+      border-left: 4px solid #2980b9;
+      margin-bottom: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>📋 Checklist - Publicación de Libros Electrónicos</h1>
+
+  <div class="info">
+    <strong>Notas:</strong><br>
+    - Todos los archivos deben estar en nombre del cliente.<br>
+  </div>
+
+  <!-- Información general -->
+  <h2>📘 Información General del Libro</h2>
+  <table>
+    <tr><td><strong>Título completo:</strong></td><td>&nbsp;</td></tr>
+    <tr><td><strong>Autor(es):</strong></td><td>&nbsp;</td></tr>
+    <tr><td><strong>Formato del archivo:</strong></td><td>&nbsp;</td></tr>
+    <tr><td><strong>ISBN (si aplica):</strong></td><td>&nbsp;</td></tr>
+    <tr><td><strong>Portada:</strong></td><td>✔️ Sí / ❌ No</td></tr>
+    <tr><td><strong>Descripción del libro:</strong></td><td>✔️ Sí / ❌ No</td></tr>
+    <tr><td><strong>Categoría y palabras clave:</strong></td><td>✔️ Sí / ❌ No</td></tr>
+  </table>
+
+  <!-- Amazon KDP -->
+  <div class="platform-header"><strong>✅ Amazon KDP (Kindle)</strong></div>
+  <table class="task-table" data-platform="amazon">
+    <tr><td><input type="checkbox" class="check"> Archivo listo (EPUB o KPF)</td></tr>
+    <tr><td><input type="checkbox" class="check"> Portada optimizada (300 ppp, JPG)</td></tr>
+    <tr><td><input type="checkbox" class="check"> Iniciar sesión en cuenta del cliente</td></tr>
+    <tr><td><input type="checkbox" class="check"> Completar datos del libro</td></tr>
+    <tr><td><input type="checkbox" class="check"> Subir libro a Amazon KDP</td></tr>
+    <tr><td><input type="checkbox" class="check"> Confirmar visibilidad pública (24–72 hrs)</td></tr>
+  </table>
+
+  <!-- Google Play Books -->
+  <div class="platform-header"><strong>✅ Google Play Books</strong></div>
+  <table class="task-table" data-platform="google">
+    <tr><td><input type="checkbox" class="check"> Archivo listo (EPUB o PDF recomendado)</td></tr>
+    <tr><td><input type="checkbox" class="check"> Portada optimizada (300 ppp, JPG/PNG)</td></tr>
+    <tr><td><input type="checkbox" class="check"> Iniciar sesión en cuenta del cliente</td></tr>
+    <tr><td><input type="checkbox" class="check"> Completar datos del libro</td></tr>
+    <tr><td><input type="checkbox" class="check"> Subir libro a Google Play Books Partner Center</td></tr>
+    <tr><td><input type="checkbox" class="check"> Confirmar visibilidad pública (12–48 hrs)</td></tr>
+  </table>
+
+  <!-- Apple Books -->
+  <div class="platform-header"><strong>✅ Apple Books (iBooks)</strong></div>
+  <table class="task-table" data-platform="apple">
+    <tr><td><input type="checkbox" class="check"> Archivo listo (EPUB 3.0 mínimo)</td></tr>
+    <tr><td><input type="checkbox" class="check"> Validado con FlightDeck o EPUBCheck</td></tr>
+    <tr><td><input type="checkbox" class="check"> Portada optimizada (300 ppp, min. 1400x1400 px)</td></tr>
+    <tr><td><input type="checkbox" class="check"> Acceso al Mac del cliente (acceso remoto)</td></tr>
+    <tr><td><input type="checkbox" class="check"> Iniciar sesión en Apple Books Partner Center</td></tr>
+    <tr><td><input type="checkbox" class="check"> Completar datos del libro</td></tr>
+    <tr><td><input type="checkbox" class="check"> Subir libro desde navegador o iTunes Producer</td></tr>
+    <tr><td><input type="checkbox" class="check"> Confirmar visibilidad pública (24–72 hrs)</td></tr>
+  </table>
+
+  <!-- Safe Creative Market -->
+  <div class="platform-header"><strong>✅ Safe Creative Market</strong></div>
+  <table class="task-table" data-platform="safe">
+    <tr><td><input type="checkbox" class="check"> Archivo listo (EPUB o PDF)</td></tr>
+    <tr><td><input type="checkbox" class="check"> Portada optimizada (JPG/PNG)</td></tr>
+    <tr><td><input type="checkbox" class="check"> Iniciar sesión en cuenta del cliente</td></tr>
+    <tr><td><input type="checkbox" class="check"> Completar datos del libro</td></tr>
+    <tr><td><input type="checkbox" class="check"> Subir libro a Safe Creative Market</td></tr>
+    <tr><td><input type="checkbox" class="check"> Confirmar visibilidad inmediata</td></tr>
+  </table>
+
+  <!-- Tiempos estimados -->
+  <h2>🕒 Tiempos Estimados de Visibilidad Pública</h2>
+  <table>
+    <tr><th>Plataforma</th><th>Tiempo estimado</th></tr>
+    <tr><td>Amazon KDP</td><td>24 – 72 horas</td></tr>
+    <tr><td>Google Play Books</td><td>12 – 48 horas</td></tr>
+    <tr><td>Apple Books</td><td>24 – 72 horas</td></tr>
+    <tr><td>Safe Creative Market</td><td>Inmediato – 2 horas</td></tr>
+  </table>
+
+  <script>
+    // Cargar checkboxes guardados
+    document.querySelectorAll('.task-table').forEach(table => {
+      const platform = table.getAttribute('data-platform');
+      const saved = JSON.parse(localStorage.getItem(`checklist_${platform}`)) || [];
+
+      table.querySelectorAll('.check').forEach((checkbox, index) => {
+        checkbox.checked = saved[index] || false;
+
+        checkbox.addEventListener('change', () => {
+          saved[index] = checkbox.checked;
+          localStorage.setItem(`checklist_${platform}`, JSON.stringify(saved));
+        });
+      });
+    });
+    
+  </script>
+
+</body>
+</html>
